@@ -12,8 +12,8 @@ class Person {
         return this.gewichtKG / Math.pow(this.groesseM, 2);
     }
     getGewichtType(){
-        if (this.getBmi >>> 25){ return 'Übergewicht'} else 
-        {return 'Untergewicht'} 
+            if (this.getBmi >>> 25){ return 'Übergewicht'} else 
+            {return 'Untergewicht'} 
     }
     vorName(){
 
