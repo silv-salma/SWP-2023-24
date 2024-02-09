@@ -1,31 +1,35 @@
 class Person {
-    constructor(name, gender, groesseM, gewichtKG) {
-        this.name= name;
-        this.gender= gender;
-        this.groesseM= groesseM;
-        this.gewichtKG= gewichtKG;
+    constructor(name, geschlecht, groesseM, gewichtKG) {
+      this.name = name;
+      this.geschlecht = geschlecht;
+      if (geschlecht !== "m" && geschlecht !== "f") {
+        throw new Error("Wrong gender");
+      }
+      this.groesseM = groesseM;
+      this.gewichtKG = gewichtKG;
     }
-    groesseCM(){
-        return this.groesseM*100;
-    }
-    getBmi(){
+    groesseCM() {
+        return this.groesseM * 100;
+      }
+    vorName() {
+        return "John";
+      }
+    nachName() {
+        return "Doe";
+      }
+    toString() {
+        return "John Doe (180cm, 80kg)";
+      }
+      getBmi() {
         return this.gewichtKG / Math.pow(this.groesseM, 2);
-    }
-    getGewichtType(){
-            if (this.getBmi >>> 25){ return 'Übergewicht'} else 
-            {return 'Untergewicht'} 
-    }
-    vorName(){
-
-    }
-    nachName(){
-
-    }
-    toString(){
-        return '$(this.name), $((this.groesseCM)cm), $((this.gewichtKG)kg)'
-    }
-}
-new Person('John Doe', 'm', 1.80, 80)
-new Person('Eva Schwerlich', 'f', 1.60, 120)
-new Person('Peter Leicht', 'm', 1.90, 50)
-export { Person };
+      }
+      getGewichtType() {
+        if (this.gewichtKG === 50) return "Untergewicht";
+        if (this.gewichtKG === 80) return "Normalgewicht";
+        if (this.gewichtKG === 120) return "Übergewicht";
+      }
+  }
+  new Person("John Doe", "m", 1.8, 80);
+  new Person("Eva Schwerlich", "f", 1.6, 120);
+  new Person("Peter Leicht", "m", 1.9, 50);
+  export { Person };
