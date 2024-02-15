@@ -18,28 +18,23 @@ class Person {
         return this.name.split(' ')[1];
       }
     toString() {
-        return "John Doe (180cm, 80kg)";
+        return '${this.name} (${this.groesseCM()}cm, (${this.gewichtKG}kg)';
       }
       getBmi() {
-        return this.gewichtKG / Math.pow(this.groesseM, 2);
+        return this.gewichtKG / this.groesseM / this.groesseM;
       }
       getGewichtType() {
-        if (this.gewichtKG === 50) return "Untergewicht";
-        if (this.gewichtKG === 80) return "Normalgewicht";
-        if (this.gewichtKG === 120) return "Übergewicht";
+        if (this.gender == 'f') {
+          if (this.getBmi() < 19 ) return 'Untergewicht';
+          if (this.getBmi() > 24) return 'Übergewicht';
+          return 'Normalgewicht';
+        } else {
+        if (this.gender == 'm'){
+          if (this.getBmi() < 20 ) return 'Untergewicht';
+          if (this.getBmi() > 25) return 'Übergewicht';
+          return 'Normalgewicht';
+        }
+        }
       }
-  //+ name : String
-  //+ gender: String
-  //+ groesseM : Number
-  //+ gewichtKG : Number
-  //+ groesseCM() : Number
-  //+ vorName(): String
-  //+ nachName(): String
-  //+ toString() : String
-  //+ getBmi() : Number
-  //+ getGewichtType(): String
 }
-  new Person("John Doe", "m", 1.8, 80);
-  new Person("Eva Schwerlich", "f", 1.6, 120);
-  new Person("Peter Leicht", "m", 1.9, 50);
-  export { Person };
+export { Person };
