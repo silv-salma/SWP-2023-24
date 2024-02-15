@@ -1,10 +1,10 @@
 class Person {
-    constructor(name, geschlecht, groesseM, gewichtKG) {
-      this.name = name;
-      this.geschlecht = geschlecht;
-      if (geschlecht !== "m" && geschlecht !== "f") {
-        throw new Error("Wrong gender");
+    constructor(name, gender, groesseM, gewichtKG) {
+      if (gender !== "m" && gender !== 'f') {
+        throw new Error('Wrong gender');
       }
+      this.name = name;
+      this.gender = gender;
       this.groesseM = groesseM;
       this.gewichtKG = gewichtKG;
     }
