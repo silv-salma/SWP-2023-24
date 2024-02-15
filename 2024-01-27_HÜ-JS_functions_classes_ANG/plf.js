@@ -1,6 +1,6 @@
 class Person {
     constructor(name, gender, groesseM, gewichtKG) {
-      if (gender !== "m" && gender !== 'f') {
+      if (gender !== 'm' && gender !== 'f') {
         throw new Error('Wrong gender');
       }
       this.name = name;
