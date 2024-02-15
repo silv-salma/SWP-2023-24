@@ -12,10 +12,10 @@ class Person {
         return this.groesseM * 100;
       }
     vorName() {
-        return "John";
+        return this.name.split(' ')[0];
       }
     nachName() {
-        return "Doe";
+        return this.name.split(' ')[1];
       }
     toString() {
         return "John Doe (180cm, 80kg)";
@@ -28,7 +28,7 @@ class Person {
         if (this.gewichtKG === 80) return "Normalgewicht";
         if (this.gewichtKG === 120) return "Übergewicht";
       }
-      //+ name : String
+  //+ name : String
   //+ gender: String
   //+ groesseM : Number
   //+ gewichtKG : Number
