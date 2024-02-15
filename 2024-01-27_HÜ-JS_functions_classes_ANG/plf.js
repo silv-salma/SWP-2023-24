@@ -18,12 +18,12 @@ class Person {
         return this.name.split(' ')[1];
       }
     toString() {
-        return '${this.name} (${this.groesseCM()}cm, (${this.gewichtKG}kg)';
+        return `${this.name} (${this.groesseCM()}cm, ${this.gewichtKG}kg)`;
       }
-      getBmi() {
+    getBmi() {
         return this.gewichtKG / this.groesseM / this.groesseM;
       }
-      getGewichtType() {
+    getGewichtType() {
         if (this.gender == 'f') {
           if (this.getBmi() < 19 ) return 'Untergewicht';
           if (this.getBmi() > 24) return 'Übergewicht';
