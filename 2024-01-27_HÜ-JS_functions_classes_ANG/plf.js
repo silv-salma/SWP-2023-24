@@ -28,6 +28,16 @@ class Person {
         if (this.gewichtKG === 80) return "Normalgewicht";
         if (this.gewichtKG === 120) return "Übergewicht";
       }
+      //+ name : String
+      //+ gender: String
+      //+ groesseM : Number
+      //+ gewichtKG : Number
+      //+ groesseCM() : Number
+      //+ vorName(): String
+      //+ nachName(): String
+      //+ toString() : String
+      //+ getBmi() : Number
+      //+ getGewichtType(): String
   }
   new Person("John Doe", "m", 1.8, 80);
   new Person("Eva Schwerlich", "f", 1.6, 120);

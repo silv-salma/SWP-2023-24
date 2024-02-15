@@ -2,7 +2,7 @@
 // + groesseM : Number
 // + gewichtKG : Number
 // toString() : String
-// getBmi() : Number// Code snippet: https://www.codewars.com/kata/56f173a35b91399a05000cb7/solutions/javascript
+// getBmi() : Number// Code snippet:
 
 import { Person } from './plf.js';
 const tests = [
