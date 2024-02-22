@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Person</title>
+    <title>homework</title>
     <script scr="plf.js" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body> 
     <label>Name:<input type="text" name="namensfeld" id="namensfeld" placeholder="Bitte Name">
-    <form>
-        <input type="radio" id="choice1" value="f" >
-        <label></label>
-    </form>
+    <fieldset>
+        <legend>Wählen Sie ein Geschlecht:</legend>
+      
+        <div>
+          <input type="radio" id="huey" name="drone" value="huey" checked />
+          <label for="huey">weiblich</label>
+        </div>
+      
+        <div>
+          <input type="radio" id="dewey" name="drone" value="dewey" />
+          <label for="dewey">männlich</label>
+        </div>
+    </fieldset>
+    <label>Größe:<input type="text" name="größefeld" id="größefeld" placeholder="Bitte Größe">
+        <br>
+    <label>Gewicht:<input type="text" name="gewichtsfeld" id="gewichtsfeld" placeholder="Bitte Gewicht">
+        <br>
     <button type="button" id="anlegen">Person anlegen</button>
-    <pre></pre>
 </body>
 </html>
