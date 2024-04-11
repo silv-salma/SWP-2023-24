@@ -1,0 +1,13 @@
+HÜ:
+
+class Kassa
+#geldLade
+scannen(artikel)
+bezahlen(betrag)
+  - ist betrag ausreichend (throw error)
+  - tats. preis in die geldlade
+  - rechnung schreiben mit retourgeld
+toString() .. heute xy € eingnommen
+
+Artikel
+{"name": "Cola", "preis": 1.89}
