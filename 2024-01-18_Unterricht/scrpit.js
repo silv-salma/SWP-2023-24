@@ -16,8 +16,11 @@ class Calculator {
     }
   
     appendNumber(number) {
+      console.log ("#1 " + number);
       if (number === '.' && this.currentOperand.includes('.')) return
+      console.log ("#2 " + number + " currentOperand " + this.currentOperand);
       this.currentOperand = this.currentOperand.toString() + number.toString()
+      console.log ("#3 " + this.currentOperand);
     }
   
     chooseOperation(operation) {
