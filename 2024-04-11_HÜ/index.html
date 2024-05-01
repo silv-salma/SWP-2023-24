@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supermarktkassa</title>
-    <script src="script.js"></script>
+    <title>Kassa System</title>
+    <script src="script.js>"></script>
 </head>
 <body>
-    
+    <h1>Kassa System</h1>
+    <input id="artikelName" type="text" placeholder="Artikelname z.B. Cola">
+    <button onclick="scannen()">Scannen</button>
+    <p id="preisAnzeige">Preis: 1.89€</p>
+    <input id="bezahlt" type="number" placeholder="Bezahlter Betrag">
+    <button onclick="bezahlen()">Bezahlen</button>
+    <p id="quittung">Rechnung: Bezahlt 7€, Preis: 1.89€, Retourgeld: 5.11€</p>
+    <p id="tagesEinnahmen">Heute wurden 1.89€ eingenommen.</p>
 </body>
 </html>
