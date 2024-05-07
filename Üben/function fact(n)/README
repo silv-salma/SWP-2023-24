@@ -1,4 +1,4 @@
-Iterative Ansatz:
+iterative approach (Ansatz):
 
       i	                  answer
 
@@ -8,11 +8,11 @@ Iterative Ansatz:
       1               	24 * 2 = 1
 
 
-Rekursive Ansatz:
+recursive approach (Ansatz):
 
-     Funktionsaufruf	                 returnWert
+     function call	                    return value
                             	              
-      Fakultät(1)                     1 (Basisfall)
-      Fakultät(2)	                      2 * 1 = 2
-      Fakultät(3)	                      3 * 2 = 6
-      Fakultät(4)	                      4 * 6 = 24
+      factorial(1)                       1 (Basisfall)
+      factorial(2)	                      2 * 1 = 2
+      factorial(3)	                      3 * 2 = 6
+      factorial(4)	                      4 * 6 = 24
