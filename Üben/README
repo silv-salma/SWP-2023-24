@@ -9,3 +9,4 @@ JS:
 -Zugriff auf ein HTML Dokument -> document.getElementById(id)
 -in ein Ausgabefenster schreiben -> alert()
 -in eine Browserkonsole schreiben -> console.log()
+-Daten einlesen mit Eingabefenster -> prompt()
