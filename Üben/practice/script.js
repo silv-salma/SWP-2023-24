@@ -1,1 +1,6 @@
-alert ("Hallo Welt!");
+document.getElementById("xy").innerHTML = "Hallo Welt";
+
+alert("Hallo");
+
+console.log(43);
+
