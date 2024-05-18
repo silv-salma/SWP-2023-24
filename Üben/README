@@ -10,3 +10,8 @@ JS:
 -in ein Ausgabefenster schreiben -> alert()
 -in eine Browserkonsole schreiben -> console.log()
 -Daten einlesen mit Eingabefenster -> prompt()
+
+Variable deklarieren:
+-var      globale Variable(functional scope)
+-let      "lokale" Variable (block scope)
+-const    fixe "lokale" Variabale (block scope)  
