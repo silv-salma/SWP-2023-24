@@ -3,10 +3,10 @@
 let tag = "Dienstag"; 
 
 switch(tag){
-    case "Montag";
+    case "Montag": //eigentlich ; statt : aber sonst zeigt er es als Fehler an
        document.write("Wochenstart");
        break;
-    case "Dienstag";
+    case "Dienstag": //eigentlich ; statt : aber sonst zeigt er es als Fehler an
        document.write("Aha");
        break;
 
