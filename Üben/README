@@ -4,6 +4,7 @@ STRG + Z + U (keine comment in css,html,ect.)
 /* */  (commetn is js)
 STRG + Alt + Pfeiltasten (mehrere Zeilen gleichzeitig bearbeiten)
 
+
 JS:
 -in ein HTML Dokument schreiben -> innerHTML
 -Zugriff auf ein HTML Dokument -> document.getElementById(id)
@@ -11,7 +12,15 @@ JS:
 -in eine Browserkonsole schreiben -> console.log()
 -Daten einlesen mit Eingabefenster -> prompt()
 
+
 Variable deklarieren:
 -var      globale Variable(functional scope)
 -let      "lokale" Variable (block scope)
 -const    fixe "lokale" Variabale (block scope)  
+
+
+Rechenoperatoren:
+-Potenzierung = **
+-Modulo = % (Rest einer Division)
+-Inkrement = ++ (plus 1)
+-Dekrement =  -- (minus 1)
