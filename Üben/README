@@ -24,3 +24,23 @@ Rechenoperatoren:
 -Modulo = % (Rest einer Division)
 -Inkrement = ++ (plus 1)
 -Dekrement =  -- (minus 1)
+
+Vergleichsoperatoren:
+   ==     gleich
+   ===    gleicher Wert & gleicher Typ
+   !=     nicht gleich
+   !==    nicht gleicher Wert & Typ
+   >=     größer als oder gleich
+   <=     kleiner als oder gleich
+
+Logische Operatoren:
+&&                  UND (AND)
+|| (STRG+Alt+<)     ODER (OR)
+!                   NICHT (NOT)
+
+
+Verzweiungen:
+if      , Codeblock wird ausgführt wenn wenn eine bestimmte Bedingung wahr (true) ist
+else    , Codeblock wird asugeführt wenn dieselbe Bedingung falsch (false) ist 
+else if , testet eine neue Bedingung wenn die erste Bedingung falsch ist 
+switch  , bietet die Möglichkeit viele auszuführende Codeblöcke anzugeben
