@@ -44,3 +44,15 @@ if      , Codeblock wird ausgführt wenn wenn eine bestimmte Bedingung wahr (tru
 else    , Codeblock wird asugeführt wenn dieselbe Bedingung falsch (false) ist 
 else if , testet eine neue Bedingung wenn die erste Bedingung falsch ist 
 switch  , bietet die Möglichkeit viele auszuführende Codeblöcke anzugeben
+
+
+Schleifen (derselbe Code kann beliebig oft ausgeführt werden):
+-for = überprüft zuerst die Bedingung, solange die Bedingung wahr ist wird der Codeblock ausgeführt
+-while = überprüft zuerst die Bedingung, solange die Bedingung wahr ist wird der Codeblock ausgeführt
+-do/while = führt den Codeblock einmal aus, bevor überprüft wird, ob die Bedingung wahr ist, dann wiederholt sie die Schleife, solange die Bedingung wahr ist
+-for in = durchläuft die Eigenschaften (Attribute) eines Objektes
+-for of = durchläuft die Werte eines iterierbaren Objektes (Array, String,...)
+
+Befehle:
+-break = damit kann man aus der ganzen Schleife "springen"
+-continue = damit kann man über einen Durchgang der Schleife springen
