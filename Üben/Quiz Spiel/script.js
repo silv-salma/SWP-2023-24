@@ -64,4 +64,4 @@ function tippeButton(getippterButton){
     } else {
         getippterButton.style.background = "red";
     }
-}
+} 
