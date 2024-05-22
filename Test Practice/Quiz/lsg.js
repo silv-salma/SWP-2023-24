@@ -1,4 +1,4 @@
-const fragen = require('./fragen');
+/*const fragen = require('./fragen'); */
 
 class Frage {
     #frage
@@ -36,4 +36,4 @@ function eulerZahl() {
     }
     return rw;
 }
-module.exports = { Frage, eulerZahl }  // bleibt am Ende des Programm
+/*module.exports = { Frage, eulerZahl }  // bleibt am Ende des Programm*/
