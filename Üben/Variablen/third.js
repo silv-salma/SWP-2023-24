@@ -16,7 +16,7 @@ var z = 12;
 
 var a = x + z;
 
-document.getElementById("xy4").innerHTML.HTML = typepf(a);
+document.getElementById("xy4").innerHTML.HTML = typeof(a);
 
 var
 let
