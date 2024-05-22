@@ -5,18 +5,18 @@ const arrayFragen = [];
 var richtigeAntwort;
 var gesperrt;
 
-document.getElementById("idAntowrt1").style.visibility = "hidden;"
-document.getElementById("idAntowrt2").style.visibility = "hidden;"
-document.getElementById("idAntowrt3").style.visibility = "hidden;"
+document.getElementById("idAntwort1").style.visibility = "hidden";
+document.getElementById("idAntwort2").style.visibility = "hidden";
+document.getElementById("idAntwort3").style.visibility = "hidden";
 
 function starteQuiz(){
     punkte = 0,
     anzahlRunden = 3;
     rundenZaehler = 0;
-    document.getElementById("idAntwort1").style.visibility = "visible;"
-    document.getElementById("idAntwort2").style.visibility = "visible;"
-    document.getElementById("idAntwort3").style.visibility = "visible;"
-    document.getElementById("idStarte").style.visibility = "hidden;"
+    document.getElementById("idAntwort1").style.visibility = "visible";
+    document.getElementById("idAntwort2").style.visibility = "visible";
+    document.getElementById("idAntwort3").style.visibility = "visible";
+    document.getElementById("idStarte").style.visibility = "hidden";
     erzeugeFragen();
     starteRunde();
 }
@@ -29,9 +29,9 @@ function erzeugeFragen(){
 
 function starteRunde(){
     if(rundenZaehler<anzahlRunden){
-    document.getElementById("idAntowrt1").style.background = "black";
-    document.getElementById("idAntowrt2").style.background = "black";
-    document.getElementById("idAntowrt3").style.background = "black";
+    document.getElementById("idAntwort1").style.background = "black";
+    document.getElementById("idAntwort2").style.background = "black";
+    document.getElementById("idAntwort3").style.background = "black";
     rundenZaehler++;
     gesperrt = false;
     var aktuelleFrage = arrayFragen.shift();
@@ -45,10 +45,10 @@ function starteRunde(){
     }
     else{
         document.getElementById("idFrage").innerHTML = "Das Spiel ist vorbei. Du hast " + rundenZaehler + " Punkte erreicht!";
-        document.getElementById("idStarte").style.visibility = "visible;"
-        document.getElementById("idAntowrt1").style.visibility = "hidden;"
-        document.getElementById("idAntowrt2").style.visibility = "hidden;"
-        document.getElementById("idAntowrt3").style.visibility = "hidden;"
+        document.getElementById("idStarte").style.visibility = "visible";
+        document.getElementById("idAntwort1").style.visibility = "hidden";
+        document.getElementById("idAntwort2").style.visibility = "hidden";
+        document.getElementById("idAntwort3").style.visibility = "hidden";
         
     }
 }
