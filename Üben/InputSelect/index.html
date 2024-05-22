@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Input und Select</title>
+    <link rel = "stylesheet" href = "styles.css"> 
     <script src = "script.js" defer></script>
 </head>
 <body>
+
     <h2>Input und Select</h2>
+    <br>
+
+    <input type = "text" id = "idText1">
+    <br>
+    <textarea id = "idText2" rows="5" cols="20"></textarea>
+    <br>
+    <input type = "checkbox" id ="idCheck1" value="Rot" name = "farben">
+    <label for = "idCheck1">Rot</label>
+    <input type = "checkbox" id ="idCheck2" value="Blau" name = "farben">
+    <label for = "idCheck2">Blau</label>
+    <br>
+    <input type ="radio" id="idRadio1" name="geschlecht" value="männlich">
+    <label for="idRadio1">Männlich</label>
+    <input type ="radio" id="idRadio2" name="geschlecht" value="weiblich">
+    <label for="idRadio2">Weiblich</label>
+
+    <p id = "idAusgabe1"></p>
+    <p id = "idAusgabe2"></p>
+    <p id = "idAusgabe3"></p>
+    <p id = "idAusgabe4"></p>
+    <p id = "idAusgabe5"></p>
     
+    <button type = "button" onclick="getValue()">Auswerten</button>
+    <br>
+    <select id="idSelect" onchange="mySelection()">
+        <option>---</option>
+        <option value="Blau">Blau</option>
+        <option value="Gelb">Gelb</option>
+        <option value="Grün">Grün</option>
+    </select>
 </body>
 </html>
